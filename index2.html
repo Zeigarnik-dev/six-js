@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 5</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index2.html">Задание 1</a>
+        <a href="index3.html">Задание 3</a>
+        <a href="index4.html">Задание 4</a>
+        <a href="index5.html">Задание 5</a>
+        <a href="index6.html">Задание 6</a>
+    </nav>
+</body>
+<script>
+    /*2 оздайте функцию multiplyNumeric(obj), 
+    которая умножает все числовые свойства объекта obj на 2. 
+    Используйте typeof для проверки, что значение свойства числовое.*/
+    let
+        menu = {
+            width: 200,
+            height: 300,
+            title: "My menu"
+        },
+        multiplyNumeric = (obj) => {
+            for (let key in obj) {
+                if (!isNaN(obj[key])) {
+                    obj[key] *= 2
+                }
+            }
+        };
+    for(let el in menu) alert(`${el} - ${menu[el]}`)
+    multiplyNumeric(menu)
+    for(let el in menu) alert(`${el} - ${menu[el]}`)
+
+</script>
+
+</html>

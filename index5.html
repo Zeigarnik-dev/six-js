@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 5</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index1.html">Задание 1</a>
+        <a href="index2.html">Задание 2</a>
+        <a href="index3.html">Задание 3</a>
+        <a href="index4.html">Задание 4</a>
+        <a href="index6.html">Задание 6</a>
+    </nav>
+</body>
+<script>
+    /*5
+    У вас есть массив объектов user, и в каждом из них есть user.name. Напишите код, который преобразует их в массив имён.
+    */
+
+    let vasya = { name: "Вася", age: 25 },
+        petya = { name: "Петя", age: 30 },
+        masha = { name: "Маша", age: 28 },
+        users = [vasya, petya, masha],
+        names = users.map(el=>el.name).join(", ");
+    alert(names)
+</script>
+
+</html>

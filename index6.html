@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 5</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index1.html">Задание 1</a>
+        <a href="index2.html">Задание 2</a>
+        <a href="index3.html">Задание 3</a>
+        <a href="index4.html">Задание 4</a>
+        <a href="index5.html">Задание 5</a>
+    </nav>
+</body>
+<script>
+    /*6
+    Напишите функцию getAverageAge(users), которая принимает массив объектов со свойством age и возвращает средний возраст.
+    */
+    let vasya = { name: "Вася", age: 25 },
+        petya = { name: "Петя", age: 30 },
+        masha = { name: "Маша", age: 28 },
+        users = [vasya, petya, masha];
+        getAverageAge = (mass) =>{
+            let ages = mass.map(el=>el.age)
+            alert(Math.ceil(ages.reduce((ac, item) => ac+item, 0) / mass.length))
+        };
+        getAverageAge(users)
+</script>
+
+</html>
