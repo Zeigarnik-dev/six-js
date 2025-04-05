@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 5</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index2.html">Задание 2</a>
+        <a href="index3.html">Задание 3</a>
+        <a href="index4.html">Задание 4</a>
+        <a href="index5.html">Задание 5</a>
+        <a href="index6.html">Задание 6</a>
+    </nav>
+</body>
+<script>
+    /*1 У нас есть объект, в котором хранятся зарплаты нашей команды:
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130
+}
+Напишите код для суммирования всех зарплат и сохраните результат в переменной sum. Должно получиться 390.
+*/
+    let
+        salaries = {
+            John: 100,
+            Ann: 160,
+            Pete: 130
+        },
+        summ = (obj) =>{
+            let sum_n = 0;
+            for(let key in obj){
+                sum_n += obj[key];
+            }
+            alert(sum_n)
+        };
+summ(salaries);
+</script>
+
+</html>
